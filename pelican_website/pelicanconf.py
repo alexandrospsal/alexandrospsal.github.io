@@ -1,6 +1,6 @@
 AUTHOR = 'Alexandros Psalidopoulos'
 SITENAME = 'AP'
-SITEURL = ""
+SITEURL = "https://alexandrospsal.github.io/"
 
 PATH = "content"
 
