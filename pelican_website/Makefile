@@ -8,7 +8,7 @@ OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
 
-GITHUB_PAGES_BRANCH=main
+GITHUB_PAGES_BRANCH=gh_pages
 
 
 DEBUG ?= 0
