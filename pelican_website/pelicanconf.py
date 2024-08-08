@@ -34,7 +34,7 @@ THEME_COLOR='#000000'
 # DOMAIN	Used for Google Analytics and Twitter Cards <meta>
 
 
-
+# dafdas
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
