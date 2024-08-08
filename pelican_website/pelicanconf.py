@@ -1,12 +1,40 @@
 AUTHOR = 'Alexandros Psalidopoulos'
 SITENAME = 'AP'
-SITEURL = "https://alexandrospsal.github.io/"
+SITEURL = ""
 
 PATH = "content"
 
 TIMEZONE = 'Europe/Athens'
 
 DEFAULT_LANG = 'en'
+
+THEME = 'themes/pneumatic'
+
+
+
+
+# relevant to the pneumatic theme only:
+ICONS_PATH='images/icons'
+SITENAME='Alexandros Psalidopoulos'
+BIO_TEXT='bio text goes here bla bla bla'
+FOOTER_TEXT='footer text here'
+SITE_AUTHOR='Alexandros Psalidopoulos'
+TWITTER_USERNAME='alexandrospsal'
+GOOGLE_PLUS_URL=''
+INDEX_DESCRIPTION=''
+SIDEBAR_LINKS=[]
+GOOGLE_FONTS=[]
+SOCIAL_ICONS = [
+    ('https://www.linkedin.com/in/alexandros-psalidopoulos-78854615b/', 'Linkedin', 'fa-linkedin'),
+    ('https://github.com/alexandrospsal', 'Github', 'fa-github'),
+    ('https://instagram.com/alexandros.psal', 'Instagram', 'fa-instagram'),
+    ]
+# SOCIAL_ICONS	List of tuples in the form (link, title, icon-class)
+THEME_COLOR='#000000'
+# DOMAIN	Used for Google Analytics and Twitter Cards <meta>
+
+
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
