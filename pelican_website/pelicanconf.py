@@ -12,12 +12,12 @@ THEME = 'themes/pneumatic'
 
 
 
-
+# ---------------------------------------------------
 # relevant to the pneumatic theme only:
 ICONS_PATH='images/icons'
 SITENAME='Alexandros Psalidopoulos'
-BIO_TEXT='bio text goes here bla bla bla'
-FOOTER_TEXT='footer text here'
+BIO_TEXT='Currently living in Athens, Greece. Website work in progress.'
+FOOTER_TEXT=''
 SITE_AUTHOR='Alexandros Psalidopoulos'
 TWITTER_USERNAME='alexandrospsal'
 GOOGLE_PLUS_URL=''
@@ -34,7 +34,27 @@ THEME_COLOR='#000000'
 # DOMAIN	Used for Google Analytics and Twitter Cards <meta>
 
 
-# dafdas
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = ARTICLE_URL + 'index.html'
+
+
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = PAGE_URL + 'index.html'
+
+ARCHIVES_SAVE_AS = 'archive/index.html'
+YEAR_ARCHIVE_SAVE_AS = '{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = '{date:%Y}/{date:%m}/index.html'
+
+# Disable authors, categories, tags, and category pages
+DIRECT_TEMPLATES = ['archives']
+CATEGORY_SAVE_AS = ''
+# ---------------------------------------------------
+
+
+
+
+
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -60,4 +80,4 @@ SOCIAL = (
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+RELATIVE_URLS = True
