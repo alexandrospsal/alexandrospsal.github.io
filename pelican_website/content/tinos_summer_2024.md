@@ -2,25 +2,29 @@ Title: Tinos summer 2024
 Date: 2024-08-08
 Category: Photography
 
-<br>
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2702_edited.jpg)
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2474.JPG)
+[Link to a directory with the fullsize images]({attach}images/tinos_summer_2024/fullsize/)
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2481.JPG) 
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2840_edited.jpg) 
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2702_edited.jpeg)
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2649_edited.jpg) 
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2474.jpeg)
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2718_edited.jpg) 
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2481.jpeg) 
 
-![alt text]({attach}images/tinos_summer_2024/DSC_2815_edited2.jpg) 
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2840_edited.jpeg) 
 
-![alt text]({attach}images/tinos_summer_2024/tinos_night_sky_1.jpg) 
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2649_edited.jpeg) 
 
-![alt text]({attach}images/tinos_summer_2024/tinos_sky_2.jpg)
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2718_edited.jpeg) 
+
+![alt text]({attach}images/tinos_summer_2024/smallsize/DSC_2815_edited2.jpeg) 
+
+![alt text]({attach}images/tinos_summer_2024/smallsize/tinos_night_sky_1.jpeg) 
+
+![alt text]({attach}images/tinos_summer_2024/smallsize/tinos_sky_2.jpeg)
+
 
 
 
