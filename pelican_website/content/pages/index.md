@@ -5,6 +5,6 @@ Slug: .
 
 
 ## Hi,
-I mainly plan to share my photography and articles in this site. Feel free to download them but please give credit when due.
+I plan to share my photography and articles on this site.
 
 
