@@ -10,7 +10,8 @@
 // Theme Variables
 
 // $main-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$main-font: Monaco, monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier;
+$main-font: Arial, Consolas, "Liberation Mono", Menlo, Courier;
+// $main-font: Monaco, monospace, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier;
 $code-font: monospace, $main-font;
 
 $social-icons: (
@@ -47,7 +48,7 @@ body {
 	// background: #eeebea;
 	background: #ffffff;
 	font-family: $main-font;
-	font-size: 13.5px;
+	font-size: 16px;
 	line-height: 1.6;
 	color: #1b1b1b;
 	-webkit-font-smoothing: antialiased;
