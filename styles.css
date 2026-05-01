@@ -21,6 +21,7 @@ html {
     --github-color: #24292e;
     --instagram-color: #e4405f;
     --substack-color: #ff6719;
+    --x-color: #000000;
 }
 
 /* Dark Theme Support */
@@ -37,6 +38,7 @@ html {
         --focus-ring: rgba(255, 255, 255, 0.2);
         
         --github-color: #ffffff;
+        --x-color: #ffffff;
     }
 }
 
@@ -171,10 +173,18 @@ h1 {
         color: var(--github-color);
         filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
     }
+    .social-icon.x:hover {
+        color: var(--x-color);
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    }
 }
 @media (prefers-color-scheme: dark) {
     .social-icon.github:hover {
         color: var(--github-color);
+        filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.15));
+    }
+    .social-icon.x:hover {
+        color: var(--x-color);
         filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.15));
     }
 }
