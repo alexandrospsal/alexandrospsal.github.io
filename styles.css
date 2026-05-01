@@ -1,0 +1,288 @@
+/* Base Styles & Variables */
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* Light Theme (Default) */
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --bg-primary: #fcfcfc;
+    --bg-secondary: #ffffff;
+    --hover-bg: #f5f5f5;
+    --border-color: rgba(0, 0, 0, 0.06);
+    --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.06);
+    --focus-ring: rgba(0, 0, 0, 0.1);
+    
+    /* Brand Colors */
+    --linkedin-color: #0a66c2;
+    --github-color: #24292e;
+    --instagram-color: #e4405f;
+    --substack-color: #ff6719;
+}
+
+/* Dark Theme Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-primary: #f5f5f5;
+        --text-secondary: #a3a3a3;
+        --bg-primary: #1a1a1a;
+        --bg-secondary: #242424;
+        --hover-bg: #2d2d2d;
+        --border-color: rgba(255, 255, 255, 0.08);
+        --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.2);
+        --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+        --focus-ring: rgba(255, 255, 255, 0.2);
+        
+        --github-color: #ffffff;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Elegant Focus States */
+*:focus-visible {
+    outline: 2px solid var(--text-secondary);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10vh; /* Pushes the entire layout up organically */
+}
+
+/* Entrance Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-1 { animation: fadeIn 0.8s ease-in-out forwards; opacity: 0; }
+.animate-2 { animation: fadeIn 0.8s ease-in-out 0.15s forwards; opacity: 0; }
+.animate-3 { animation: fadeIn 0.8s ease-in-out 0.3s forwards; opacity: 0; }
+.animate-4 { animation: fadeIn 0.8s ease-in-out 0.45s forwards; opacity: 0; }
+
+/* Header & Typography */
+header {
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.03em;
+    /* Subtle text gradient for a premium ink feel */
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bio {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    font-weight: 400;
+}
+
+.location {
+    font-size: 1.15rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Divider */
+.divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-color), transparent);
+    margin: 0 auto 2.5rem auto;
+    width: 60%;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon svg {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: currentColor;
+}
+
+.social-icon.substack svg {
+    transform: scale(0.85);
+}
+
+/* Hover effects with subtle glowing filter */
+.social-icon.linkedin:hover {
+    color: var(--linkedin-color);
+    filter: drop-shadow(0 4px 12px rgba(10, 102, 194, 0.3));
+}
+
+@media (prefers-color-scheme: light) {
+    .social-icon.github:hover {
+        color: var(--github-color);
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+    }
+}
+@media (prefers-color-scheme: dark) {
+    .social-icon.github:hover {
+        color: var(--github-color);
+        filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.15));
+    }
+}
+
+.social-icon.instagram:hover {
+    color: var(--instagram-color);
+    filter: drop-shadow(0 4px 12px rgba(228, 64, 95, 0.3));
+}
+
+.social-icon.substack:hover {
+    color: var(--substack-color);
+    filter: drop-shadow(0 4px 12px rgba(255, 103, 25, 0.3));
+}
+
+/* Articles Section */
+.articles {
+    text-align: center;
+}
+
+.articles h2 {
+    font-size: 0.85rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+}
+
+.article-list {
+    list-style: none;
+}
+
+.article-list li {
+    margin-bottom: 1rem;
+}
+
+.article-list li:last-child {
+    margin-bottom: 0;
+}
+
+.article-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.article-list a:hover {
+    background: var(--bg-secondary);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15), 0 4px 8px rgba(0,0,0,0.22);
+}
+
+.article-list a .article-title {
+    padding-right: 1rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.article-list a i {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.4;
+}
+
+.article-list a:hover i {
+    color: var(--text-primary);
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 2rem 1.25rem;
+    }
+    
+    h1 {
+        font-size: 2.1rem;
+    }
+    
+    .location {
+        font-size: 1.05rem;
+    }
+    
+    .social-links {
+        gap: 1.25rem;
+    }
+    
+    .social-icon {
+        font-size: 1.5rem;
+    }
+    
+    .social-icon svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .article-list a {
+        padding: 1.1rem 1.25rem;
+        font-size: 0.9rem;
+    }
+}
